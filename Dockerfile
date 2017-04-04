@@ -113,7 +113,7 @@ RUN curl --insecure -fsSLO https://get.docker.com/builds/Linux/x86_64/docker-1.1
     tar --strip-components=1 -xvzf docker-1.12.3.tgz -C /usr/local/bin && \
     chmod +x /usr/local/bin/docker && \
     ### Same deal, install docker-compose ###
-    curl --insecure -L "https://github.com/docker/compose/releases/download/1.8.1/docker-compose-$(uname -s)-$(uname -m)" > /usr/local/bin/docker-compose && \
+    curl --insecure -L "https://github.com/docker/compose/releases/download/1.11.2/docker-compose-$(uname -s)-$(uname -m)" > /usr/local/bin/docker-compose && \
     chmod +x /usr/local/bin/docker-compose
     ### Now Node/Npm/NVM
 RUN /bin/bash -c "curl --insecure -o- https://raw.githubusercontent.com/creationix/nvm/v0.32.1/install.sh | bash && \
